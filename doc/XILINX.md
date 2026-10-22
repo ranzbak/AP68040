@@ -409,10 +409,10 @@ MHz, area by `syn/vivado_ooc.sh` (Vivado 2023.2, xc7a100t, 17.630 ns):
   flops: +1,654 LUTs.  In LUT RAM with a clearing sweep: +267.
 
 Verification: `tb/run_tests.sh` 175/175 (with `t_ld1`, `t_btic`);
-`tb/run_dualrand.sh` 400 seeds; the WinUAE cputest corpus fails only
+`tb/run_dualrand.sh` 400 seeds; the WinUAE cputest corpus passes
+6,771/6,792 slices on the final build (BTIC, 8 KB caches), failing only
 the 21 slices the scalar core fails too (13 ODD_EXC trace, 8 ODD_IRQ
-EXT/SWAP), checked through the second-slot loads; the BTIC and 8 KB
-builds' corpus runs were not complete at the time of writing.
+EXT/SWAP).
 
 ## Verification status
 
